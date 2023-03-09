@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: "Bradley Hand ITC";
+
+}
+body {
+    background-color: #333;
+    color:white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#canvas {
+    border-radius: 5px;
+    background-image: url("bg1.png");
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+#overlay #card {
+    border:solid 3px black;
+    background-color: white;
+    width: 500px;
+    height: 190px;
+    padding:0.5rem 0.5rem;
+    margin:0 0.5rem;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+    animation: cardIn 1s forwards;
+    display: none;
+}
+#overlay #card > p {
+    font-size: 50px;
+    margin-top: 10px;
+    user-select: none;
+
+}
+#overlay #card > button {
+    outline: none;
+    color:black;
+    border: none;
+    background: transparent;
+    padding: 0.5rem 0.5rem;
+    width: 90%;
+    border-radius: 20px;
+    margin:0 0.5rem;
+    font-size:1rem;
+    cursor: pointer;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+    border:solid 2px #41403E;
+}
+button:hover{
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+ }
